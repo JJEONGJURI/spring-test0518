@@ -5,6 +5,9 @@ import org.springframework.context.support.AbstractApplicationContext;
 
 public class Main1 {
 	public static void main(String[] args) {
+		/*
+		 * ctx : user1(contact1),user2(contact2), contact1, contact2
+		 */
 		AbstractApplicationContext ctx = 
 				new AnnotationConfigApplicationContext(AppConfig.class); 
 		User user1 = ctx.getBean("user1", User.class);
